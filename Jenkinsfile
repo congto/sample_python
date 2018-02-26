@@ -16,7 +16,7 @@ pipeline {
                 sh 'pip install -r dev-requirements.txt'
                 sh 'pytest -s -r xX'
                 sh 'flake8 --version' 
-                            }                    
+            }                    
         }
         stage('Test') {
             steps {
