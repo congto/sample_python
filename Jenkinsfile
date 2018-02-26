@@ -16,6 +16,7 @@ pipeline {
                 sh 'pip install -r dev-requirements.txt'
                 sh 'pytest -s -r xX'
                 sh 'flake8 --version' 
+                sh 'flake8 --ignore E501 setup.py sample tests'
             }
         }
     }
