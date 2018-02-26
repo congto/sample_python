@@ -18,10 +18,4 @@ pipeline {
                 sh 'flake8 --version' 
             }                    
         }
-        stage('Test') {
-            steps {
-                echo 'Testing...'
-                sh 'flake8 --ignore E501 setup.py sample tests'
-            }
-    }
 }
